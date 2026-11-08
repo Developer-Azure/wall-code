@@ -4,7 +4,8 @@ Code for wallposts and other things. Requested by people
 # Development
 ***This is constantly updated as I develop***
 
-**Jean Garry** - In Development
+**Jean Garry** - Complete
+
 Other people will be added here as I get more requests
 
 # License
