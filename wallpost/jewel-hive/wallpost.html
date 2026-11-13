@@ -1,0 +1,278 @@
+<!--
+Version 2.0 - Developed by Developer-Azure (Azure Azure)
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+    :root {
+        font-family: 'Inter', sans-serif;
+        --azure-primary-color: #EBA937;
+        --azure-secondary-color: #FFFF00;
+        --azure-text-color: #000000;
+        --azure-secondary-text-color: #909090;
+        --azure-background: linear-gradient(to bottom, #EBA937, #FFE5B4, #ffff00, #8EA202);
+        --azure-background-size: cover;
+        --azure-section-background: #99755c;
+        --azure-section-background-alpha: 50%;
+        --azure-cgi: url("media/bees-2.png");
+        --azure-cgi-front: ;
+        --azure-section-background-blur: 8px;
+    }
+
+    .background {
+        position: relative;
+        isolation: isolate;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--azure-background);
+        background-position: center;
+        background-size: var(--azure-background-size);
+        background-repeat: no-repeat;
+        color: var(--azure-text-color);
+        padding-top: 60px;
+        padding-bottom: 60px;
+        width: 100%;
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+    #CGI, #CGI-front {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+    }
+
+    #CGI {
+        background: var(--azure-cgi);
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+        z-index: 0;
+    }
+
+    #CGI-front {
+        z-index: 2;
+    }
+
+    h1, h3 {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .divider {
+        width: 75%;
+        height: 1px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: var(--azure-text-color);
+    }
+
+    .divider-no-color {
+        width: 75%;
+        height: 3px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .divider-no-color-md {
+        width: 75%;
+        height: 3px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .divider-no-color-sm {
+        width: 75%;
+        height: 3px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .content {
+        border-radius: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        position: relative;
+        z-index: 1;
+        isolation: isolate;
+        width: 70%;
+        height: fit-content;
+        backdrop-filter: blur(var(--azure-section-background-blur));
+        -webkit-backdrop-filter: blur(var(--azure-section-background-blur));
+    }
+
+    .content::before {
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        background: var(--azure-section-background);
+        opacity: var(--azure-section-background-alpha, 100%);
+        content: "";
+        pointer-events: none;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        box-sizing: border-box;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .text-section {
+        display: flex;
+        flex-direction: column;
+        width: min(100%, 42rem);
+        box-sizing: border-box;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+
+    .text-section a {
+        display: block;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .sc-v {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sc-h {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-pfp {
+        height: 100px;
+        aspect-ratio: 1 / 1;
+    }
+
+    @media (max-width: 600px) {
+        .background {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        h1 {
+            font-size: clamp(1.5rem, 7vw, 2rem);
+        }
+
+        h3 {
+            font-size: clamp(1.1rem, 5vw, 1.4rem);
+        }
+    }
+</style>
+<div class="background">
+    <div id="CGI"></div>
+    <div class="content">
+        <div class="section">
+            <div class="sc-h">
+                <div class="sc-v">
+                    <div class="divider-no-color-md"></div>
+                    <h1>Jewel Pantala Hive</h1>
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="divider"></div>
+        </div> 
+        <div class="section">
+            <div class="text-section">
+                <h2>NICKNAMES</h2>
+                <div class="divider-no-color-sm"></div>
+                <a><b>Claimed by Pia Classdi:</b> Queen Jewel, Jew</a>
+                <div class="divider-no-color-sm"></div>
+                <a><b>Claimed by Kindle Flame:</b> Jewie, Jewniper, Jewnie,</a>
+                <a>Lill B, Big B, Jew-Jew, and Jewve</a>
+                <div class="divider-no-color-sm"></div>
+                <a><b>Claimed by Pedal Tree:</b> Plant-Hive, Jewltala, hively,</a>
+                <a>and my absolute favorite: <b>Sparkly Object</b></a>
+                <div class="divider-no-color-sm"></div>
+                <a><b>Claimed by Liana Thistle:</b> Queen bee, Honey, Hivi, and Jive</a>
+                <div class="divider-no-color-sm"></div>
+                <a><b>Claimed by Honey Suckle:</b> Honey Drop, Jello</a> 
+                <div class="divider-no-color-sm"></div>
+                <a><b>Claimed by Abia Rose:</b> Jewls, and Jewels</a>
+                <div class="divider-no-color-sm"></div>
+                <a><b>Claimed by Angel Flight:</b> jem, jool, jelly, jullo,</a> 
+                <a>june, bug, cartwheel</a>
+                <div class="divider-no-color-sm"></div>
+                <a><b>Claimed by Jangi Lomana:</b> Jewley</a>
+            </div>
+            <div class="divider-no-color"></div>        
+        </div>
+        <div class="section">
+            <div class="text-section">
+                <h2>FANDOMS</h2>
+                <div class="divider-no-color-sm"></div>
+                <a>A tale dark and grim (movie series)</a>
+                <div class="divider-no-color-sm"></div>
+                <a>Wings of Fire (series)</a>
+                <div class="divider-no-color-sm"></div>
+                <a>Eragon (series)</a>
+                <div class="divider-no-color-sm"></div>
+                <a>Harry potter (series)</a>
+                <div class="divider-no-color-sm"></div>
+                <a>Little kitty big city (video game)</a>
+                <div class="divider-no-color-sm"></div>
+                <a>Minecraft (video game)</a>
+                <div class="divider-no-color-sm"></div>
+                <a>The war that saved my life/ the war i finally won(series)</a>
+            </div>
+            <div class="divider-no-color"></div>
+        </div>
+        <div class="section">
+            <div class="text-section">
+                <h2>RELATIONS:</h2> 
+
+                <a><b>Dating:</b> open, but I need to know you very well/</a>
+                <a>be close with you. (Jewel/ Pantala is not gay)</a>
+                <div class="divider-no-color-sm"></div>
+                <a><b>Marriage:</b> closed</a>
+                <div class="divider-no-color-sm"></div>
+                <a><b>CiC:</b> open</a>
+                <div class="divider-no-color-sm"></div>
+                <a><b>Clawmate:</b> open for goldies</a>
+                <div class="divider-no-color-sm"></div>
+                <a><b>Ex partner:</b> closed, unless we have dated</a>
+                <div class="divider-no-color-sm"></div>
+                <a><b>Mentor/ mentee:</b> sure!</a>
+                <div class="divider-no-color-sm"></div>
+                <a><b>Rival:</b> i guess if you have a reason sure...</a>
+                <div class="divider-no-color-sm"></div>
+                <a><b>Parent:</b> open for a mother silk-leaf and a father hivewing</a> 
+                <div class="divider-no-color-sm"></div>
+                <a><b>Child:</b> um no, closed</a>
+                <div class="divider-no-color-sm"></div>
+                <a><b>Colleague:</b> open</a>
+                <div class="divider-no-color-sm"></div>
+                <a><b>Family:</b> open for any silkwing leafwing hivewing tribrids</a>
+                <div class="divider-no-color-sm"></div>
+                <b>Friend: of course!</b> 
+            </div>
+            <div class="divider-no-color"></div>
+        </div>
+    </div>
+    <div id="CGI-front"></div>
+</div>
